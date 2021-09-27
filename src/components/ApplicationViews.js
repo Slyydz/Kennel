@@ -1,10 +1,10 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "../Home"
-import { AnimalCard } from "../components/animal/AnimalCard.js"
-import { LocationCard } from "../location/Location.js"
-import { CustomerCard } from "../customers/Customer.js"
-import { EmployeeCard } from "../employees/Employees.js"
+import { AnimalList } from "../components/animal/AnimalList.js"
+import { CustomerList } from "../customers/CustomerList"
+import { EmployeeList } from "../employees/EmployeeList"
+import { LocationList } from "../location/LocationList"
 
 export const ApplicationViews = () => {
     return (
@@ -16,19 +16,19 @@ export const ApplicationViews = () => {
 
             
             <Route exact path="/animals">
-              <AnimalCard />
+              <AnimalList />
             </Route>
 
             <Route exact path="/locations">
-              <LocationCard />
+              <LocationList />
             </Route>
 
             <Route exact path="/customers">
-              <CustomerCard />
+              <CustomerList />
             </Route>
 
             <Route exact path="/employees">
-              <EmployeeCard />
+              <EmployeeList />
             </Route>
         </>
     )
