@@ -1,11 +1,6 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
-    },
-    {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull"
