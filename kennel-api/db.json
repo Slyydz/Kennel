@@ -1,27 +1,75 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Shepherd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        }
-    ],
-    "employees": [],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    },
+    {
+      "id": 4,
+      "name": "Diesel",
+      "breed": "Doberman"
+    },
+    {
+      "id": 5,
+      "name": "Tennessee",
+      "breed": "Vizsla"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct"
+    },
+    {
+      "id": 2,
+      "name": "Peter Parker",
+      "address": "20 Ingram St."
+    },
+    {
+      "id": 3,
+      "name": "Wade Watts",
+      "address": "202 Stacks Ln."
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Miles Morales",
+      "locationName": "Nashville North"
+    },
+    {
+      "id": 2,
+      "name": "Wade Wilson",
+      "locationName": "Nashville North"
+    },
+    {
+      "id": 3,
+      "name": "Tony Stark",
+      "locationName": "Nashville South"
+    },
+    {
+      "id": 4,
+      "name": "Bruce Wayne",
+      "locationName": "Nashville South"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }

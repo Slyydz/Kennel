@@ -1,9 +1,19 @@
 import React from "react";
 import "./Location.css";
 
-export const LocationCard = () => (
-    <section className="location">
-        <h3 className="location__name">Nashville Kennels North</h3>
-        <h3 className="location__address">200 Main Street</h3>
-    </section>
-)
+export const LocationCard = ({ location, handleDeleteLocation }) => {
+    return (
+      <div className="card">
+        <div className="card-content">
+          {/* <picture>
+            <img src={require('./dog.svg')} alt="My Dog" />
+          </picture> */}
+          <h3>Name: <span className="card-locationName">
+            {location.name}
+          </span></h3>
+          <p>Address: {location.address}</p>
+          <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove Location</button>
+        </div>
+      </div>
+    );
+  }
