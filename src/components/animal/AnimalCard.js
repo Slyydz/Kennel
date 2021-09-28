@@ -1,8 +1,10 @@
 import React from "react";
 import "./Animal.css"
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 
 export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
+  const history = useHistory();
   return (
     <div className="card">
       <div className="card-content">
