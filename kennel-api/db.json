@@ -20,23 +20,33 @@
     {
       "id": 1,
       "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
+      "address": "7002 Chestnut Ct",
+      "email": "Hannah@test.com"
     },
     {
       "id": 2,
       "name": "Peter Parker",
-      "address": "20 Ingram St."
+      "address": "20 Ingram St.",
+      "email": "Peter@test.com"
     },
     {
       "id": 3,
       "name": "Wade Watts",
-      "address": "202 Stacks Ln."
+      "address": "202 Stacks Ln.",
+      "email": "Wade@test.com"
     },
     {
       "name": "Bruce Banner",
       "locationName": "",
       "address": "207 Stark Tower",
-      "id": 4
+      "id": 4,
+      "email": "Bruce@test.com"
+    },
+    {
+      "email": "williams.cole29@yahoo.com",
+      "address": "2831 Maple Cir",
+      "name": "Brady Williams",
+      "id": 5
     }
   ],
   "employees": [
@@ -76,6 +86,11 @@
       "name": "East Nashville",
       "address": "400 East Bend Dr.",
       "id": 3
+    },
+    {
+      "name": "Nashville West",
+      "address": "782 West End Blvd.",
+      "id": 4
     }
   ]
 }
