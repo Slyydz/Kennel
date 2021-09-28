@@ -17,3 +17,13 @@ export const deleteCustomer = (id) => {
   })
   .then(result => result.json());
 }
+
+export const addCustomer = (newCustomer) => {
+  return fetch(`${remoteURL}/customers`, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newCustomer)
+  }).then(response => response.json())
+}
