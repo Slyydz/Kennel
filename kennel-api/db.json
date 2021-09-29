@@ -3,17 +3,30 @@
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Pitbull"
+      "breed": "Pitbull",
+      "locationId": 2,
+      "customerId": 4
     },
     {
       "id": 4,
       "name": "Diesel",
-      "breed": "Doberman"
+      "breed": "Doberman",
+      "locationId": 1,
+      "customerId": 3
     },
     {
       "id": 5,
       "name": "Tennessee",
-      "breed": "Vizsla"
+      "breed": "Vizsla",
+      "locationId": 3,
+      "customerId": 5
+    },
+    {
+      "name": "Spots",
+      "breed": "Dalmatian",
+      "locationId": 4,
+      "customerId": 2,
+      "id": 6
     }
   ],
   "customers": [

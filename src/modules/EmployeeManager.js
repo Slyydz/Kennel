@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:5002"
 
 export const getEmployeeById = (employeeId) => {
   //be sure your Employees have good data and related to a location and Employee
-  return fetch(`${remoteURL}/employees/${employeeId}?_expand=location&_expand=customer`)
+  return fetch(`${remoteURL}/employees/${employeeId}`)
   .then(res => res.json())
 }
 
