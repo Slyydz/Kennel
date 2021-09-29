@@ -5,6 +5,7 @@ import { ApplicationViews } from "./ApplicationViews";
 
 const isAdmin = true;
 
+
 export const Kennel = () => {
 
     return <>

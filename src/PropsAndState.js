@@ -1,6 +1,9 @@
 import React, {useState} from "react";
+import "./components/PropsAndStates.css"
+import { CurrentDate } from "./helpers/CurrentDate";
 
-export const PropsAndState = ({name}) => {
+export const PropsAndState = ({yourName}) => {
+
     let [countClicks, setCountClicks] = useState(0);
 
     const handleClick = () => {
@@ -15,7 +18,8 @@ export const PropsAndState = ({name}) => {
 
     return (
         <> 
-            <h3>Welcome, {name}</h3>
+            <CurrentDate />
+            <h3>Welcome, {yourName}</h3>
             <p>{countClicks}</p>
             <button onClick={(handleClick)}>Click Here</button>
             <button onClick={(resetClick)}>Reset</button>

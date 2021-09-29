@@ -16,7 +16,7 @@ import { Register } from "./auth/Register"
 import { Login } from "./auth/Login"
 import { Redirect } from "react-router"
 
-export const ApplicationViews = ({isAdmin}) => {
+export const ApplicationViews = ({isAdmin, date}) => {
 
   const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null);
 
@@ -30,7 +30,7 @@ export const ApplicationViews = ({isAdmin}) => {
     <>
 
       <Route exact path="/">
-        <Home isAdmin={isAdmin}/>
+        <Home isAdmin={isAdmin} date={date}/>
       </Route>
 
       {/* Authentication section */}
