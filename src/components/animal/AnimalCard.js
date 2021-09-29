@@ -16,7 +16,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
           {animal.name}
         </span></h3>
         <p>Breed: {animal.breed}</p>
-        <Link to={`/animals/${animal.id}`}>
+        <Link to={`/animals/details/${animal.id}`}>
           <button>Details</button>
         </Link>
       </div>

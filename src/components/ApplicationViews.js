@@ -51,7 +51,7 @@ export const ApplicationViews = ({isAdmin, date}) => {
       </Route>
 
       {/* Details/Edit section */}
-      <Route exact path="/animals/:animalId(\d+)">
+      <Route exact path="/animals/details/:animalId(\d+)">
         <AnimalDetail />
       </Route>
 

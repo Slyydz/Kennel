@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import { addAnimal } from '../../modules/AnimalManager';
+import { getAllLocations } from '../../modules/LocationManager';
+import { getAllCustomers } from '../../modules/CustomerManager';
 import './AnimalForm.css'
 
 export const AnimalForm = () => {
@@ -18,6 +20,7 @@ export const AnimalForm = () => {
 
 	// you will need the the `getAll` in the LocationsManager and CustomersManager to complete this section
 	const [locations, setLocations] = useState([]);
+
 	const [customers, setCustomers] = useState([]);
 
 	const history = useHistory();
@@ -45,10 +48,16 @@ export const AnimalForm = () => {
 
     useEffect(() => {
 		//load location data and setState
+		getAllLocations().then(loc => {
+			setLocations(loc)
+		})
 	}, []);
 
      useEffect(() => {
 		//load customer data and setState
+		getAllCustomers().then(cus => {
+			setCustomers(cus)
+		})
 	}, []);
 
 

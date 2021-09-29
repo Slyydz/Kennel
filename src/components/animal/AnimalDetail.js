@@ -15,9 +15,12 @@ export const AnimalDetail = () => {
         console.log("useEffect", animalId)
         getAnimalById(animalId)
           .then(animal => {
+            console.log(animal.customer.name)
             setAnimal({
               name: animal.name,
-              breed: animal.breed
+              breed: animal.breed,
+              location: animal.location,
+              customer: animal.customer
             });
             setisLoading(false)
           });
