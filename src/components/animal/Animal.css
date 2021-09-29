@@ -7,6 +7,11 @@
     margin-bottom: 2em;
     flex: 0 1 24%;
   }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
   
   .card-content {
     padding: .5em;

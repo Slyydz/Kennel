@@ -5,12 +5,13 @@ import { useHistory } from "react-router";
 
 export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
   const history = useHistory();
+  console.log(require('../../image/doggo.png'))
   return (
     <div className="card">
       <div className="card-content">
-        {/* <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
-          </picture> */}
+        { <picture>
+            <img src={require('../../image/doggo.png').default} alt="My Dog" />
+          </picture> }
         <h3>Name: <span className="card-petname">
           {animal.name}
         </span></h3>
