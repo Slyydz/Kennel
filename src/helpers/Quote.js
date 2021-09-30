@@ -1,30 +1,35 @@
 import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
-import { getQuote } from "../modules/QuoteFetch";
+import { getQuoteAPI } from "../modules/QuoteFetch";
 
 export const Quote = () => {
-    const [quote, changeQuote] = useState([]);
+    const [allQuotes, changeQuotes] = useState([]);
     const [singleQuote, changeSingle] = useState({});
 
     const getAQuote = () => {
 
-        return getQuote().then( taco => {
-            changeQuote(taco);
-            changeSingle(taco[randomNum()]);
+        return getQuoteAPI().then( allQuotes => {
+            //set allQuotes to the entire api
+            changeQuotes(allQuotes);
+            //set singleQuote to a random object from the array
+            changeSingle(allQuotes[randomNum()]);
         })
     }
 
 
 
     const randomNum = () => {
-        return Math.floor(Math.random() * quote.length);
+        //function returns a random number that is inside the scope of allQuotes
+        return Math.floor(Math.random() * allQuotes.length);
     }
 
     const newButton = () => {
-        changeSingle(quote[randomNum()]);
+        //when the newButton is called then changeSingle is used to get a new object from the entire api using quote
+        changeSingle(allQuotes[randomNum()]);
     }
 
     useEffect(() => {
+        //useEffect to call getQuote on initial startup
         getAQuote();
     }, []);
 
