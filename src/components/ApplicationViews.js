@@ -15,6 +15,7 @@ import { useState } from "react/cjs/react.development"
 import { Register } from "./auth/Register"
 import { Login } from "./auth/Login"
 import { Redirect } from "react-router"
+import { Quote } from "../helpers/Quote"
 
 export const ApplicationViews = ({isAdmin, date}) => {
 

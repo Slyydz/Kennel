@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./components/PropsAndStates.css"
 import { CurrentDate } from "./helpers/CurrentDate";
+import { Quote } from "./helpers/Quote";
 
 export const PropsAndState = ({yourName}) => {
 
@@ -23,6 +24,8 @@ export const PropsAndState = ({yourName}) => {
             <p>{countClicks}</p>
             <button onClick={(handleClick)}>Click Here</button>
             <button onClick={(resetClick)}>Reset</button>
+
+            <Quote />
         </>
     )
 }
