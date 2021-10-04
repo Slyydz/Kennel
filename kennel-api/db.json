@@ -1,39 +1,11 @@
 {
   "animals": [
     {
-      "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull",
-      "locationId": 2,
-      "customerId": 4
-    },
-    {
-      "id": 4,
-      "name": "Diesel",
-      "breed": "Doberman",
-      "locationId": 1,
-      "customerId": 3
-    },
-    {
-      "id": 5,
-      "name": "Tennessee",
-      "breed": "Vizsla",
-      "locationId": 3,
-      "customerId": 5
-    },
-    {
-      "name": "Spots",
+      "id": 1,
+      "name": "Yea ",
       "breed": "Dalmatian",
-      "locationId": 4,
-      "customerId": 2,
-      "id": 6
-    },
-    {
-      "name": "Buddy",
-      "breed": "Golden Retriever ",
-      "locationId": 2,
-      "customerId": 6,
-      "id": 7
+      "location": "",
+      "customer": ""
     }
   ],
   "customers": [

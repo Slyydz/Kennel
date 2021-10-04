@@ -12,7 +12,6 @@ export const AnimalDetail = () => {
 
     useEffect(() => {
         //getAnimalById(id) from AnimalManager and hang on to the data; put it into state
-        console.log("useEffect", animalId)
         getAnimalById(animalId)
           .then(animal => {
             console.log(animal.customer.name)
