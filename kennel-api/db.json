@@ -27,6 +27,13 @@
       "locationId": 4,
       "customerId": 2,
       "id": 6
+    },
+    {
+      "name": "Buddy",
+      "breed": "Golden Retriever ",
+      "locationId": 2,
+      "customerId": 6,
+      "id": 7
     }
   ],
   "customers": [
@@ -60,6 +67,12 @@
       "address": "2831 Maple Cir",
       "name": "Brady Williams",
       "id": 5
+    },
+    {
+      "email": "bradywilliamsdev@gmail.com",
+      "address": "2831 Maple Cir",
+      "name": "Brady Williams",
+      "id": 6
     }
   ],
   "employees": [

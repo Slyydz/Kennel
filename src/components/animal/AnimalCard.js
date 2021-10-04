@@ -2,6 +2,7 @@ import React from "react";
 import "./Animal.css"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
+import { firstLetterCase } from "../../helpers/helpers";
 
 export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
   const history = useHistory();
@@ -12,10 +13,10 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
         { <picture>
             <img src={require('../../image/doggo.png').default} alt="My Dog" />
           </picture> }
-        <h3>Name: <span className="card-petname">
-          {animal.name}
+        <h3><span className="card-petname">
+          {firstLetterCase(animal.name)}
         </span></h3>
-        <p>Breed: {animal.breed}</p>
+        <p>Breed: {firstLetterCase(animal.breed)}</p>
         <Link to={`/animals/details/${animal.id}`}>
           <button>Details</button>
         </Link>
