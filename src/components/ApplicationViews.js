@@ -16,8 +16,9 @@ import { Register } from "./auth/Register"
 import { Login } from "./auth/Login"
 import { Redirect } from "react-router"
 import { Quote } from "../helpers/Quote"
+import { AnimalEditForm } from "./animal/AnimalEditForm"
 
-export const ApplicationViews = ({isAdmin, date}) => {
+export const ApplicationViews = ({ isAdmin, date }) => {
 
   const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null);
 
@@ -31,7 +32,7 @@ export const ApplicationViews = ({isAdmin, date}) => {
     <>
 
       <Route exact path="/">
-        <Home isAdmin={isAdmin} date={date}/>
+        <Home isAdmin={isAdmin} date={date} />
       </Route>
 
       {/* Authentication section */}
@@ -54,6 +55,15 @@ export const ApplicationViews = ({isAdmin, date}) => {
       {/* Details/Edit section */}
       <Route exact path="/animals/details/:animalId(\d+)">
         <AnimalDetail />
+      </Route>
+
+      <Route path="/animals/:animalId(\d+)/edit">
+        {/* if (isAuthenticated()) {
+          return <AnimalEditForm />
+        } else {
+          return <Redirect to="/login" />
+        } */}
+        {isAuthenticated ? <AnimalEditForm /> : <Redirect to="/login" />}
       </Route>
 
 
