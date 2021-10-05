@@ -6,7 +6,7 @@ import "./AnimalForm.css"
 import { useParams, useHistory } from "react-router-dom"
 
 export const AnimalEditForm = () => {
-    const [animal, setAnimal] = useState({ name: "", breed: "", location: "", customer: ""});
+    const [animal, setAnimal] = useState({ name: "", breed: ""});
     const [isLoading, setIsLoading] = useState(false);
 
     const { animalId } = useParams();
@@ -20,6 +20,14 @@ export const AnimalEditForm = () => {
         const stateToChange = { ...animal };
         stateToChange[evt.target.id] = evt.target.value;
         setAnimal(stateToChange);
+        console.log(animal)
+    };
+
+    const handleFieldChangeParseInt = evt => {
+        const stateToChange = { ...animal };
+        stateToChange[evt.target.id] = parseInt(evt.target.value);
+        setAnimal(stateToChange);
+        console.log(animal)
     };
 
     const updateExistingAnimal = evt => {
@@ -31,8 +39,8 @@ export const AnimalEditForm = () => {
             id: animalId,
             name: animal.name,
             breed: animal.breed,
-            location: animal.location,
-            customer: animal.customer
+            locationId: animal.locationId,
+            customerId: animal.customerId
         };
 
         update(editedAnimal)
@@ -91,7 +99,7 @@ export const AnimalEditForm = () => {
                     <fieldset>
 				<div className="form-group">
 					<label htmlFor="location">Assign to location: </label>
-					<select value={animal.location?.id} name="locationId" onChange={handleFieldChange} id="locationId" className="form-control" >
+					<select value={animal.locationId} name="locationId" onChange={handleFieldChangeParseInt} id="locationId" className="form-control" >
 						<option value="0">Select a location</option>
 						{locations.map(l => (
 							<option key={l.id} value={l.id}>
@@ -104,7 +112,7 @@ export const AnimalEditForm = () => {
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="customerId">Customer: </label>
-					<select value={animal.customer?.id} name="customer" onChange={handleFieldChange} id="customerId" className="form-control" >
+					<select value={animal.customerId} name="customer" onChange={handleFieldChangeParseInt} id="customerId" className="form-control" >
 						<option value="0">Select a customer</option>
 						{customers.map(c => (
 							<option key={c.id} value={c.id}>
