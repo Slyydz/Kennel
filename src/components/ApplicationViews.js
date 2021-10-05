@@ -17,6 +17,7 @@ import { Login } from "./auth/Login"
 import { Redirect } from "react-router"
 import { Quote } from "../helpers/Quote"
 import { AnimalEditForm } from "./animal/AnimalEditForm"
+import { useEffect } from "react"
 
 export const ApplicationViews = ({ isAdmin, date }) => {
 

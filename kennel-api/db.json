@@ -49,16 +49,17 @@
       "email": "Bruce@test.com"
     },
     {
-      "email": "williams.cole29@yahoo.com",
-      "address": "2831 Maple Cir",
-      "name": "Brady Williams",
-      "id": 5
-    },
-    {
       "email": "bradywilliamsdev@gmail.com",
       "address": "2831 Maple Cir",
       "name": "Brady Williams",
+      "isAdmin": true,
       "id": 6
+    },
+    {
+      "email": "adssadasd@dasda",
+      "address": "dsadasdsad",
+      "name": "dasdad asdasdasd",
+      "id": 7
     }
   ],
   "employees": [
