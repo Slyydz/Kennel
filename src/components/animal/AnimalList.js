@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { AnimalCard } from './AnimalCard';
 import { deleteAnimal, getAllAnimals, getAnimalById } from '../../modules/AnimalManager';
 import { useHistory } from 'react-router';
+import { getCustomerById } from '../../modules/CustomerManager';
 
 export const AnimalList = () => {
   // The initial state is an empty array
@@ -33,10 +34,10 @@ export const AnimalList = () => {
     <div className="container-cards">
       <section className="section-content">
         <button type="button"
-          className="btn"
-          onClick={() => { history.push("/animals/create") }}>
-          Admit Animal
-        </button>
+        className="btn"
+        onClick={() => { history.push("/animals/create") }}>
+        Admit Animal
+      </button> 
       </section>
       {animals.map(animal => <AnimalCard key={animal.id} animal={animal} handleDeleteAnimal={handleDeleteAnimal}/>)}
     </div>

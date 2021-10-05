@@ -21,8 +21,9 @@ export const Login = ({setAuthUser}) => {
         existingUserCheck()
             .then(exists => {
                 if (exists) {
-                    setAuthUser(exists)
-                    history.push("/")
+                    setAuthUser(exists);
+                    console.log(exists);
+                    history.push("/");
                 } else {
                     existDialog.current.showModal()
                 }
