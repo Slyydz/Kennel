@@ -2,10 +2,24 @@
   "animals": [
     {
       "id": 1,
-      "name": "Yea ",
+      "name": "Tennessee",
+      "breed": "Vizsla",
+      "locationId": 2,
+      "customerId": 4
+    },
+    {
+      "id": 2,
+      "name": "Diesel ",
+      "breed": "Doberman ",
+      "locationId": 1,
+      "customerId": 2
+    },
+    {
+      "id": 3,
+      "name": "Spots",
       "breed": "Dalmatian",
-      "location": "",
-      "customer": ""
+      "locationId": 1,
+      "customerId": 4
     }
   ],
   "customers": [
