@@ -9,10 +9,17 @@
     },
     {
       "id": 2,
-      "name": "dasdasdas",
-      "breed": "dsadsadsad",
-      "locationId": 3,
-      "customerId": 3
+      "name": "Diesel ",
+      "breed": "Doberman ",
+      "locationId": 1,
+      "customerId": 2
+    },
+    {
+      "id": 3,
+      "name": "Spots",
+      "breed": "Dalmatian",
+      "locationId": 1,
+      "customerId": 4
     }
   ],
   "customers": [
