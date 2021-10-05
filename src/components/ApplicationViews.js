@@ -19,21 +19,14 @@ import { Quote } from "../helpers/Quote"
 import { AnimalEditForm } from "./animal/AnimalEditForm"
 import { useEffect } from "react"
 
-export const ApplicationViews = ({ isAdmin, date }) => {
-
-  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null);
-
-  const setAuthUser = (user) => {
-    sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-    setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-  }
+export const ApplicationViews = ({ setAuthUser, isAuthenticated }) => {
 
 
   return (
     <>
 
       <Route exact path="/">
-        <Home isAdmin={isAdmin} date={date} />
+        <Home  />
       </Route>
 
       {/* Authentication section */}
